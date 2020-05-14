@@ -25,7 +25,7 @@ makeCacheMatrix <- function(x = matrix()) {
 ## by the makeCacheMAtrix function. If the inverse has already been
 ## calculated and the matrix has not changed, the function retrieves 
 ## the inverse from the cache
-solveCache <- function(x, ...) {
+cacheSolve <- function(x, ...) {
   ## checks if the inverse has been created and cached
   inv <- x$get_inv()
   if(!is.null(inv)){
